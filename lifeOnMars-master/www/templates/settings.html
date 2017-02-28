@@ -1,0 +1,13 @@
+<ion-view>
+  <ion-header-bar class="bar-stable">
+    <h1 class="title">Settings</h1>
+    <a href="#/homeUrl">NASA Picture of the Day</a>
+  </ion-header-bar>
+  <ion-content>
+    <h4>Show Pictures from:</h4><br>
+    <div ng-repeat="choice in choices" for="{{choice}}">
+      <ion-radio type="radio" ng-model="amount.days" ng-value= "choice" ng-change="changeNoDays(amount.days)">{{choice}}
+      </ion-radio>
+    </div>
+  </ion-content>  
+</ion-view>

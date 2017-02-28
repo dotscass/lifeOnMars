@@ -1,0 +1,24 @@
+
+<ion-view>
+    <ion-header-bar class="bar-stable">
+        <h1 class="title">NASA Picture of the Day</h1>
+          <a href="#/settingsUrl">Settings</a>
+    </ion-header-bar>
+    <ion-content>
+      <div id="cardDiv" ng-repeat="pic in nasaPhotosArray">
+        <ion-card>
+          <ion-card-header>
+            <h5>{{pic.title}}</h5>
+            <h5>{{pic.date}}</h5>
+          </ion-card-header>
+          <ion-card-content>
+            <p>{{pic.explanation}}</p>
+            <img ng-src="{{pic.url}}">
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </ion-content>
+</ion-view>
+
+
+
